@@ -8,6 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Saludar
+      uses: actions/hello-world-action-by-luis-beltran@v1.0
+      with:
+        who-to-greet: 'Luis'
+    
     - name: Tener copia local del repo
       uses: actions/checkout@v4.2.2
 
@@ -23,7 +28,7 @@ jobs:
       run: dotnet build --no-restore
 
   crear-pdf:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: baileyjm02/markdown-to-pdf@v1
