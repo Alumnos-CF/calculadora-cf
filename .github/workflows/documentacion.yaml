@@ -23,7 +23,7 @@ jobs:
       run: dotnet build --no-restore
 
   crear-pdf:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
       - uses: baileyjm02/markdown-to-pdf@v1
