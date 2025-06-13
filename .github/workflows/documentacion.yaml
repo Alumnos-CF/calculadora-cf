@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Saludar
-      uses: actions/hello-world-action-by-luis-beltran@v1.0
+      uses: icebeam7/hello-world-action-by-luis-beltran@v1.0
       with:
         who-to-greet: 'Luis'
     
